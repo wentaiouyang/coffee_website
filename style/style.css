@@ -1,0 +1,45 @@
+body .maincontent {
+  margin: auto;
+  background-image: linear-gradient(133deg, #e0f391, rgba(225, 252, 116, 0) 58%, #e0f391 66%), linear-gradient(355deg, #bdfff9, #e0f391 73%);
+  width: 100%;
+}
+body .maincontent .navbar {
+  width: 100%;
+}
+body .maincontent .navbar .navbar__row {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  border-bottom: 1px black solid;
+}
+body .maincontent .navbar .navbar__logo {
+  width: 160px;
+}
+body .maincontent .navbar .navbar__list {
+  line-height: 106px;
+}
+body .maincontent .navbar .navbar__list ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+}
+body .maincontent .navbar .navbar__list ul li {
+  margin: 0 10px;
+}
+body .maincontent .maincontent__content {
+  max-width: 1200px;
+  margin: auto;
+}
+body .maincontent .maincontent__title h1 {
+  line-height: 50px;
+}
+body .maincontent .maincontent__title .maincontent__title-button {
+  margin-top: 100px;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  line-height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

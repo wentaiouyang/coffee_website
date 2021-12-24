@@ -4,9 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
     <title>coffeecommune</title>
   </head>
   <body>
-    <h1>This is coffee website</h1>
+    <div class="maincontent">
+      <header class="navbar">
+        <div class="navbar__row row">
+          <img
+            class="navbar__logo col-lg-2 col-md-2"
+            src="./static/TheCoffeeCommune-LogoSeries-RGB-1-2logo-e1600866870209.png"
+            alt="logo"
+          />
+          <nav class="navbar__list col-lg-10 col-md-10 hidden-xs hidden-sm">
+            <ul>
+              <li>Our work</li>
+              <li>What we do</li>
+              <li>About us</li>
+              <li>Get in touch</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="maincontent__content row">
+        <div class="maincontent__title col-lg-6 col-md-8 col-sm-12 col-xs-12">
+          <h1>WHERE THE COFFEE COMMUNITY COLLABORATES</h1>
+          <a class="maincontent__title-button" href="#">Join us</a>
+        </div>
+        <img
+          class="maincontent__image col-lg-6 col-md-4 col-sm-12 col-xs-12"
+          src="./static/coffee-training-photo-op.jpg"
+          alt="coffee"
+        />
+      </section>
+    </div>
   </body>
 </html>

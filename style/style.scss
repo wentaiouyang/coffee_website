@@ -1,0 +1,63 @@
+$maxwidth: 1200px;
+$gradient_color: linear-gradient(
+    133deg,
+    #e0f391,
+    rgba(225, 252, 116, 0) 58%,
+    #e0f391 66%
+  ),
+  linear-gradient(355deg, #bdfff9, #e0f391 73%);
+
+@mixin buttonstyle {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  line-height: 100px;
+}
+
+body {
+  .maincontent {
+    .navbar {
+      width: 100%;
+      .navbar__row {
+        max-width: $maxwidth;
+        margin: auto;
+        display: flex;
+        border-bottom: 1px black solid;
+      }
+      .navbar__logo {
+        width: 160px;
+      }
+
+      .navbar__list {
+        line-height: 106px;
+        ul {
+          display: flex;
+          list-style: none;
+          justify-content: flex-end;
+          margin: 0;
+        }
+        ul li {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    margin: auto;
+    background-image: $gradient_color;
+    width: 100%;
+    .maincontent__content {
+      max-width: $maxwidth;
+      margin: auto;
+    }
+    .maincontent__title {
+      h1 {
+        line-height: 50px;
+      }
+
+      .maincontent__title-button {
+        margin-top: 100px;
+        @include buttonstyle();
+      }
+    }
+  }
+}
