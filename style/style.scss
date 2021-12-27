@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 $maxwidth: 1200px;
 $gradient_color: linear-gradient(
     133deg,
@@ -9,27 +10,83 @@ $gradient_color: linear-gradient(
 
 @mixin buttonstyle {
   padding: 15px 30px;
+  width: 200px;
+  text-align: center;
   background-color: black;
   color: white;
-  line-height: 100px;
 }
 
-body {
+@mixin contentstyle {
+  max-width: $maxwidth;
+  margin: auto;
+}
+
+@mixin titlestyle {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+
+@mixin textstyle {
+  font: optional;
+}
+
+main {
+  .fixednavbar__shownav {
+    opacity: 1 !important;
+    z-index: 1 !important;
+  }
+  .fixednavbar {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 200ms;
+    width: 100%;
+    .fixednavbar__row {
+      @include contentstyle();
+      display: flex;
+      border-bottom: 1px black solid;
+    }
+    .fixednavbar__logo {
+      width: 140px;
+    }
+
+    .fixednavbar__list {
+      line-height: 90px;
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        margin: 0;
+      }
+      ul li {
+        margin: 0 10px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        &:hover {
+          -webkit-filter: blur(1px);
+          filter: blur(1px);
+        }
+      }
+    }
+  }
+
   .maincontent {
     .navbar {
       width: 100%;
       .navbar__row {
-        max-width: $maxwidth;
-        margin: auto;
+        @include contentstyle();
         display: flex;
         border-bottom: 1px black solid;
       }
       .navbar__logo {
-        width: 160px;
+        width: 140px;
       }
 
       .navbar__list {
-        line-height: 106px;
+        line-height: 90px;
         ul {
           display: flex;
           list-style: none;
@@ -38,6 +95,12 @@ body {
         }
         ul li {
           margin: 0 10px;
+          cursor: pointer;
+          transition: all 200ms ease-in-out;
+          &:hover {
+            -webkit-filter: blur(1px);
+            filter: blur(1px) !important;
+          }
         }
       }
     }
@@ -46,17 +109,77 @@ body {
     background-image: $gradient_color;
     width: 100%;
     .maincontent__content {
-      max-width: $maxwidth;
-      margin: auto;
+      @include contentstyle();
     }
-    .maincontent__title {
+    .maincontent__content-title {
+      padding-right: 40px;
       h1 {
-        line-height: 50px;
+        @include titlestyle();
       }
 
-      .maincontent__title-button {
-        margin-top: 100px;
+      p {
+        line-height: 24px;
+      }
+
+      .maincontent__content-title-button {
         @include buttonstyle();
+        margin-top: 50px;
+        a {
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .membershipintro {
+    padding: 20px 0;
+    .membershipintro__content {
+      @include contentstyle();
+      .membershipintro__content-title {
+        @include titlestyle();
+      }
+
+      .membershipintro__content-des {
+        @include textstyle();
+        margin-bottom: 30px;
+      }
+      .membershipintro__row {
+        @include contentstyle();
+      }
+      .membershipintro__content-list {
+        .membershipintro__content-list-row {
+          @include contentstyle();
+        }
+        .membershipintro__content-list-item {
+          overflow: hidden;
+          height: 500px;
+          margin-bottom: 20px;
+          transition: all 200ms ease-in-out;
+          &:hover {
+            -webkit-filter: blur(5px);
+            filter: blur(5px) !important;
+            // transform: scale(1.05);
+          }
+
+          img {
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+
+        .membershipintro__content-list-text {
+          border-top: 1px solid black;
+          padding-top: 10px;
+        }
+      }
+      .membershipintro__content-button {
+        @include buttonstyle();
+        margin-left: 15px;
+        a {
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }

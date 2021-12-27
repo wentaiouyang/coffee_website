@@ -1,45 +1,159 @@
-body .maincontent {
-  margin: auto;
-  background-image: linear-gradient(133deg, #e0f391, rgba(225, 252, 116, 0) 58%, #e0f391 66%), linear-gradient(355deg, #bdfff9, #e0f391 73%);
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+main .fixednavbar__shownav {
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+main .fixednavbar {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 200ms;
   width: 100%;
 }
-body .maincontent .navbar {
-  width: 100%;
-}
-body .maincontent .navbar .navbar__row {
+main .fixednavbar .fixednavbar__row {
   max-width: 1200px;
   margin: auto;
   display: flex;
   border-bottom: 1px black solid;
 }
-body .maincontent .navbar .navbar__logo {
-  width: 160px;
+main .fixednavbar .fixednavbar__logo {
+  width: 140px;
 }
-body .maincontent .navbar .navbar__list {
-  line-height: 106px;
+main .fixednavbar .fixednavbar__list {
+  line-height: 90px;
 }
-body .maincontent .navbar .navbar__list ul {
+main .fixednavbar .fixednavbar__list ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   margin: 0;
 }
-body .maincontent .navbar .navbar__list ul li {
+main .fixednavbar .fixednavbar__list ul li {
   margin: 0 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
-body .maincontent .maincontent__content {
+main .fixednavbar .fixednavbar__list ul li:hover {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+main .maincontent {
+  margin: auto;
+  background-image: linear-gradient(133deg, #e0f391, rgba(225, 252, 116, 0) 58%, #e0f391 66%), linear-gradient(355deg, #bdfff9, #e0f391 73%);
+  width: 100%;
+}
+main .maincontent .navbar {
+  width: 100%;
+}
+main .maincontent .navbar .navbar__row {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  border-bottom: 1px black solid;
+}
+main .maincontent .navbar .navbar__logo {
+  width: 140px;
+}
+main .maincontent .navbar .navbar__list {
+  line-height: 90px;
+}
+main .maincontent .navbar .navbar__list ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+}
+main .maincontent .navbar .navbar__list ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+main .maincontent .navbar .navbar__list ul li:hover {
+  -webkit-filter: blur(1px);
+  filter: blur(1px) !important;
+}
+main .maincontent .maincontent__content {
   max-width: 1200px;
   margin: auto;
 }
-body .maincontent .maincontent__title h1 {
-  line-height: 50px;
+main .maincontent .maincontent__content-title {
+  padding-right: 40px;
 }
-body .maincontent .maincontent__title .maincontent__title-button {
-  margin-top: 100px;
+main .maincontent .maincontent__content-title h1 {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+main .maincontent .maincontent__content-title p {
+  line-height: 24px;
+}
+main .maincontent .maincontent__content-title .maincontent__content-title-button {
   padding: 15px 30px;
+  width: 200px;
+  text-align: center;
   background-color: black;
   color: white;
-  line-height: 100px;
+  margin-top: 50px;
+}
+main .maincontent .maincontent__content-title .maincontent__content-title-button a {
+  color: white;
+  cursor: pointer;
+}
+main .membershipintro {
+  padding: 20px 0;
+}
+main .membershipintro .membershipintro__content {
+  max-width: 1200px;
+  margin: auto;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-des {
+  font: optional;
+  margin-bottom: 30px;
+}
+main .membershipintro .membershipintro__content .membershipintro__row {
+  max-width: 1200px;
+  margin: auto;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-row {
+  max-width: 1200px;
+  margin: auto;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-item {
+  overflow: hidden;
+  height: 500px;
+  margin-bottom: 20px;
+  transition: all 200ms ease-in-out;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-item:hover {
+  -webkit-filter: blur(5px);
+  filter: blur(5px) !important;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-item img {
+  width: 100%;
+  cursor: pointer;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-text {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-button {
+  padding: 15px 30px;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-left: 15px;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-button a {
+  color: white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
