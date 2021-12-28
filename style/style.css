@@ -77,6 +77,7 @@ main .maincontent .navbar .navbar__list ul li:hover {
 main .maincontent .maincontent__content {
   max-width: 1200px;
   margin: auto;
+  padding-bottom: 30px;
 }
 main .maincontent .maincontent__content-title {
   padding-right: 40px;
@@ -87,7 +88,9 @@ main .maincontent .maincontent__content-title h1 {
   font-family: "Rubik", sans-serif;
 }
 main .maincontent .maincontent__content-title p {
-  line-height: 24px;
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
 }
 main .maincontent .maincontent__content-title .maincontent__content-title-button {
   padding: 15px 30px;
@@ -95,14 +98,17 @@ main .maincontent .maincontent__content-title .maincontent__content-title-button
   text-align: center;
   background-color: black;
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 main .maincontent .maincontent__content-title .maincontent__content-title-button a {
   color: white;
   cursor: pointer;
 }
+main .maincontent .maincontent__content-image {
+  margin-top: 20px;
+}
 main .membershipintro {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 main .membershipintro .membershipintro__content {
   max-width: 1200px;
@@ -115,6 +121,8 @@ main .membershipintro .membershipintro__content .membershipintro__content-title 
 }
 main .membershipintro .membershipintro__content .membershipintro__content-des {
   font: optional;
+  line-height: 26px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 main .membershipintro .membershipintro__content .membershipintro__row {
@@ -142,6 +150,7 @@ main .membershipintro .membershipintro__content .membershipintro__content-list .
 main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-text {
   border-top: 1px solid black;
   padding-top: 10px;
+  font-size: 20px;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-button {
   padding: 15px 30px;
@@ -154,6 +163,72 @@ main .membershipintro .membershipintro__content .membershipintro__content-button
 main .membershipintro .membershipintro__content .membershipintro__content-button a {
   color: white;
   cursor: pointer;
+}
+main .aboutus {
+  background-color: #f7f6f3;
+  padding: 40px 0;
+}
+main .aboutus .aboutus__content {
+  max-width: 1200px;
+  margin: auto;
+}
+main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-text {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-button {
+  padding: 15px 30px;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 40px;
+}
+main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-button a {
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 40px 0;
+}
+.footer .footer__row {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer .footer__row .footer__row-copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid white;
+  text-align: center;
+}
+.footer .footer__row .footer__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__row .footer__col .footer__col-logo {
+  filter: invert(100%);
+  padding-right: 20px;
+  border-right: solid black 1px;
+}
+.footer .footer__row .footer__col .footer__col-list {
+  list-style: none;
+}
+.footer .footer__row .footer__col .footer__col-list li {
+  margin: 10px 0;
+}
+.footer .footer__row .footer__col .footer__col-list .footer__col-list-icon {
+  cursor: pointer;
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

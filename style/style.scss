@@ -29,6 +29,8 @@ $gradient_color: linear-gradient(
 
 @mixin textstyle {
   font: optional;
+  line-height: 26px;
+  font-size: 16px;
 }
 
 main {
@@ -110,6 +112,7 @@ main {
     width: 100%;
     .maincontent__content {
       @include contentstyle();
+      padding-bottom: 30px;
     }
     .maincontent__content-title {
       padding-right: 40px;
@@ -118,22 +121,25 @@ main {
       }
 
       p {
-        line-height: 24px;
+        @include textstyle();
       }
 
       .maincontent__content-title-button {
         @include buttonstyle();
-        margin-top: 50px;
+        margin-top: 20px;
         a {
           color: white;
           cursor: pointer;
         }
       }
     }
+    .maincontent__content-image {
+      margin-top: 20px;
+    }
   }
 
   .membershipintro {
-    padding: 20px 0;
+    padding: 40px 0;
     .membershipintro__content {
       @include contentstyle();
       .membershipintro__content-title {
@@ -171,6 +177,7 @@ main {
         .membershipintro__content-list-text {
           border-top: 1px solid black;
           padding-top: 10px;
+          font-size: 20px;
         }
       }
       .membershipintro__content-button {
@@ -179,6 +186,68 @@ main {
         a {
           color: white;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .aboutus {
+    background-color: #f7f6f3;
+    padding: 40px 0;
+    .aboutus__content {
+      @include contentstyle();
+
+      .aboutus__content-description {
+        .aboutus__content-title {
+          @include titlestyle();
+        }
+        .aboutus__content-text {
+          @include textstyle();
+        }
+        .aboutus__content-button {
+          @include buttonstyle();
+          margin-top: 40px;
+          a {
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+
+  padding: 40px 0;
+  .footer__row {
+    @include contentstyle();
+    .footer__row-copyright {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid white;
+      text-align: center;
+    }
+    .footer__col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .footer__col-logo {
+        filter: invert(100%);
+        padding-right: 20px;
+        border-right: solid black 1px;
+      }
+
+      .footer__col-list {
+        list-style: none;
+        li {
+          margin: 10px 0;
+        }
+        .footer__col-list-icon {
+          cursor: pointer;
+          margin: 5px 0;
         }
       }
     }
