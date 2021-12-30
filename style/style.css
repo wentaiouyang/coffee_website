@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 main .fixednavbar__shownav {
   opacity: 1 !important;
   z-index: 1 !important;
@@ -87,6 +88,11 @@ main .maincontent .maincontent__content-title h1 {
   line-height: 50px;
   font-family: "Rubik", sans-serif;
 }
+main .maincontent .maincontent__content-title h1 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
 main .maincontent .maincontent__content-title p {
   font: optional;
   line-height: 26px;
@@ -109,29 +115,41 @@ main .maincontent .maincontent__content-image {
 }
 main .membershipintro {
   padding: 40px 0;
+  max-width: 1200px;
+  margin: auto;
 }
 main .membershipintro .membershipintro__content {
   max-width: 1200px;
   margin: auto;
+  transition: 400ms all ease-in-out;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-title {
   font-size: 36px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
+  padding: 0 20px;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-des {
   font: optional;
   line-height: 26px;
   font-size: 16px;
-  margin-bottom: 30px;
+  padding: 0 20px;
 }
-main .membershipintro .membershipintro__content .membershipintro__row {
-  max-width: 1200px;
-  margin: auto;
+main .membershipintro .membershipintro__content .membershipintro__content-des-group {
+  max-height: 0;
+  overflow: hidden;
+  transition: 400ms all ease-in-out;
 }
-main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-row {
-  max-width: 1200px;
-  margin: auto;
+main .membershipintro .membershipintro__content .membershipintro__content-des-group-show {
+  max-height: 1000px !important;
+}
+main .membershipintro .membershipintro__content .membershipintro__content-list {
+  padding: 20px;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-list .membershipintro__content-list-item {
   overflow: hidden;
@@ -153,16 +171,14 @@ main .membershipintro .membershipintro__content .membershipintro__content-list .
   font-size: 20px;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-button {
+  margin-left: 20px;
+  margin-top: 20px;
   padding: 15px 30px;
   width: 200px;
   text-align: center;
   background-color: black;
   color: white;
-  margin-left: 15px;
-}
-main .membershipintro .membershipintro__content .membershipintro__content-button a {
-  color: white;
-  cursor: pointer;
+  border: none;
 }
 main .aboutus {
   background-color: #f7f6f3;
@@ -176,6 +192,11 @@ main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-
   font-size: 36px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
+}
+main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-text {
   font: optional;
@@ -191,6 +212,42 @@ main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-
   margin-top: 40px;
 }
 main .aboutus .aboutus__content .aboutus__content-description .aboutus__content-button a {
+  color: white;
+  cursor: pointer;
+}
+main .start {
+  background-color: #e0f391;
+}
+main .start .start__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+main .start .start__content-buttonsection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+}
+main .start .start__content-text {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+main .start .start__content-text span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+main .start .start__content-button {
+  padding: 15px 30px;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+main .start .start__content-button a {
   color: white;
   cursor: pointer;
 }

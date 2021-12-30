@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+body {
+  margin: 0;
+}
+body main .fixednavbar {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 200ms;
+  width: 100%;
+}
+body main .fixednavbar .fixednavbar__row {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  border-bottom: 1px black solid;
+}
+body main .fixednavbar .fixednavbar__logo {
+  width: 140px;
+}
+body main .fixednavbar .fixednavbar__list {
+  line-height: 90px;
+}
+body main .fixednavbar .fixednavbar__list ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+}
+body main .fixednavbar .fixednavbar__list ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+body main .fixednavbar .fixednavbar__list ul li:hover {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+body main .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+body main .content .content__title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+body main .content .content__title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+body main .content .content__text {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+body main .content .content__video {
+  height: 600px;
+  margin-bottom: 20px;
+}
+body main .content .cards__row .cards__row-card div {
+  height: 200px;
+  margin-top: 20px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+body main .content .cards__row .cards__row-card div:hover {
+  background-color: #bbd359;
+}
+body main .content .cards__row .cards__row-card div img {
+  margin-bottom: 20px;
+}
+body main .content .cards__row .cards__row-card div p {
+  color: white;
+}
+body main .show {
+  display: block !important;
+}
+body main .info {
+  background-color: #f7f6f3;
+  padding-bottom: 40px;
+  display: none;
+}
+body main .info .info__row {
+  max-width: 1200px;
+  margin: auto;
+}
+body main .info .info__row .info__row-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+  padding-left: 20px;
+}
+body main .info .info__row .info__row-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+body main .info .info__row .info__row-price {
+  padding: 20px;
+}
+body main .info .info__row .info__row-price p {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+body main .info .info__row .info__row-benefit {
+  padding: 20px;
+  background-color: #e7e7e7;
+}
+body main .info .info__row .info__row-benefit ul li {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+body main .info .info__row .info__row-benefit img {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+}
+body main .footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 40px 0;
+}
+body main .footer .footer__row {
+  max-width: 1200px;
+  margin: auto;
+}
+body main .footer .footer__row .footer__row-copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid white;
+  text-align: center;
+}
+body main .footer .footer__row .footer__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .footer .footer__row .footer__col .footer__col-logo {
+  filter: invert(100%);
+  padding-right: 20px;
+  border-right: solid black 1px;
+}
+body main .footer .footer__row .footer__col .footer__col-list {
+  list-style: none;
+}
+body main .footer .footer__row .footer__col .footer__col-list li {
+  margin: 10px 0;
+}
+body main .footer .footer__row .footer__col .footer__col-list .footer__col-list-icon {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=membership.css.map */

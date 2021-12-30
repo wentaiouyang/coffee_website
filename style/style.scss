@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
 $maxwidth: 1200px;
 $gradient_color: linear-gradient(
     133deg,
@@ -25,6 +26,11 @@ $gradient_color: linear-gradient(
   font-size: 36px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
+  span {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+  }
 }
 
 @mixin textstyle {
@@ -140,23 +146,34 @@ main {
 
   .membershipintro {
     padding: 40px 0;
+    @include contentstyle();
     .membershipintro__content {
       @include contentstyle();
+      transition: 400ms all ease-in-out;
       .membershipintro__content-title {
         @include titlestyle();
+        padding: 0 20px;
       }
 
       .membershipintro__content-des {
         @include textstyle();
-        margin-bottom: 30px;
+        padding: 0 20px;
       }
-      .membershipintro__row {
-        @include contentstyle();
+
+      .membershipintro__content-des-group {
+        // display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: 400ms all ease-in-out;
       }
+
+      .membershipintro__content-des-group-show {
+        // display: block !important;
+        max-height: 1000px !important;
+      }
+
       .membershipintro__content-list {
-        .membershipintro__content-list-row {
-          @include contentstyle();
-        }
+        padding: 20px;
         .membershipintro__content-list-item {
           overflow: hidden;
           height: 500px;
@@ -165,7 +182,6 @@ main {
           &:hover {
             -webkit-filter: blur(5px);
             filter: blur(5px) !important;
-            // transform: scale(1.05);
           }
 
           img {
@@ -181,12 +197,10 @@ main {
         }
       }
       .membershipintro__content-button {
+        margin-left: 20px;
+        margin-top: 20px;
         @include buttonstyle();
-        margin-left: 15px;
-        a {
-          color: white;
-          cursor: pointer;
-        }
+        border: none;
       }
     }
   }
@@ -212,6 +226,34 @@ main {
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+
+  .start {
+    background-color: #e0f391;
+    .start__content {
+      @include contentstyle();
+      padding: 40px 0;
+    }
+
+    .start__content-buttonsection {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: auto;
+    }
+
+    .start__content-text {
+      @include titlestyle();
+    }
+
+    .start__content-button {
+      @include buttonstyle();
+      margin: 0;
+      a {
+        color: white;
+        cursor: pointer;
       }
     }
   }
