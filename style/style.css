@@ -146,7 +146,7 @@ main .membershipintro .membershipintro__content .membershipintro__content-des-gr
   transition: 400ms all ease-in-out;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-des-group-show {
-  max-height: 1000px !important;
+  max-height: 5000px !important;
 }
 main .membershipintro .membershipintro__content .membershipintro__content-list {
   padding: 20px;

@@ -161,15 +161,13 @@ main {
       }
 
       .membershipintro__content-des-group {
-        // display: none;
         max-height: 0;
         overflow: hidden;
         transition: 400ms all ease-in-out;
       }
 
       .membershipintro__content-des-group-show {
-        // display: block !important;
-        max-height: 1000px !important;
+        max-height: 5000px !important;
       }
 
       .membershipintro__content-list {
