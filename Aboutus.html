@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="./style/aboutus.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./static/cc.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -19,11 +20,25 @@
     <title>coffee commune</title>
   </head>
   <body>
+    <nav id="mobilemenu" class="mobilemenu">
+      <div id="close" class="mobilemenu__closebtn">
+        <img width="30px" src="./static/cross.png" alt="cross" />
+      </div>
+
+      <div class="mobilemenu__content">
+        <ul>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Learn</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <header id="fixednav" class="fixednavbar">
         <div class="fixednavbar__row row">
           <img
-            class="fixednavbar__logo col-lg-2 col-md-2"
+            class="fixednavbar__logo col-lg-2 col-md-2 col-xs-2"
             src="./static/TheCoffeeCommune-LogoSeries-RGB-1-2logo-e1600866870209.png"
             alt="logo"
           />
@@ -37,6 +52,9 @@
               <li>Get in touch</li>
             </ul>
           </nav>
+          <div id="burgerbtn" class="burgerbtn col-xs-10 visible-xs">
+            <img width="30px" src="./static/burger.png" alt="burger" />
+          </div>
         </div>
       </header>
       <div class="content">
@@ -173,4 +191,5 @@
       </footer>
     </main>
   </body>
+  <script type="text/javascript" src="script/burgermenu.js"></script>
 </html>

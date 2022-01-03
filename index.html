@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Coffee Commune" />
+    <meta
+      property="og:image"
+      content="./static/tim-mossholder-YC6RVdoTtIk-unsplash-scaled-e1613813193283.jpg"
+    />
     <link href="./style/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./static/cc.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -19,11 +25,25 @@
     <title>coffee commune</title>
   </head>
   <body>
-    <main>
+    <nav id="mobilemenu" class="mobilemenu">
+      <div id="close" class="mobilemenu__closebtn">
+        <img width="30px" src="./static/cross.png" alt="cross" />
+      </div>
+
+      <div class="mobilemenu__content">
+        <ul>
+          <li>About us</li>
+          <li>Services</li>
+          <li>Learn</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
       <header id="fixednav" class="fixednavbar">
         <div class="fixednavbar__row row">
           <img
-            class="fixednavbar__logo col-lg-2 col-md-2"
+            class="fixednavbar__logo col-lg-2 col-md-2 col-xs-2"
             src="./static/TheCoffeeCommune-LogoSeries-RGB-1-2logo-e1600866870209.png"
             alt="logo"
           />
@@ -37,6 +57,9 @@
               <li>Get in touch</li>
             </ul>
           </nav>
+          <div id="burgerbtn" class="burgerbtn col-xs-10 visible-xs">
+            <img width="30px" src="./static/burger.png" alt="burger" />
+          </div>
         </div>
       </header>
       <section class="maincontent">
@@ -106,35 +129,41 @@
             <div class="membershipintro__content-list-row row">
               <div class="col-lg-4">
                 <div class="membershipintro__content-list-item">
-                  <img
-                    src="./static/Notepad-op.jpg"
-                    alt="coffee and notebook"
-                  />
+                  <a href="./membership.html"
+                    ><img
+                      src="./static/Notepad-op.jpg"
+                      alt="coffee and notebook"
+                  /></a>
                 </div>
                 <p class="membershipintro__content-list-text">
                   <b>MEMBERSHIP</b>
                 </p>
               </div>
+
               <div class="col-lg-4">
                 <div class="membershipintro__content-list-item">
-                  <img
-                    src="./static/jonathan-sanchez-LcVyOlJVlEI-unsplash-scaled.jpg"
-                    alt="make coffee"
-                  />
+                  <a href="./greenBeans.html">
+                    <img
+                      src="./static/sabin-popa-WqCkUU30Gvk-unsplash-1365x2048-op.jpg"
+                      alt="coffee bean"
+                    />
+                  </a>
                 </div>
                 <p class="membershipintro__content-list-text">
-                  <b>ROASTING</b>
+                  <b>GREEN BEANS</b>
                 </p>
               </div>
               <div class="col-lg-4">
                 <div class="membershipintro__content-list-item">
-                  <img
-                    src="./static/sabin-popa-WqCkUU30Gvk-unsplash-1365x2048-op.jpg"
-                    alt="coffee bean"
-                  />
+                  <a href="./roasting.html">
+                    <img
+                      src="./static/jonathan-sanchez-LcVyOlJVlEI-unsplash-scaled.jpg"
+                      alt="make coffee"
+                    />
+                  </a>
                 </div>
                 <p class="membershipintro__content-list-text">
-                  <b>GREEN BEANS</b>
+                  <b>ROASTING</b>
                 </p>
               </div>
             </div>
@@ -344,4 +373,5 @@
     </footer>
   </body>
   <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript" src="script/burgermenu.js"></script>
 </html>
