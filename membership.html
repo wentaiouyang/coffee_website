@@ -20,24 +20,42 @@
     <title>coffee commune</title>
   </head>
   <body>
+    <nav id="mobilemenu" class="mobilemenu">
+      <div id="close" class="mobilemenu__closebtn">
+        <img width="30px" src="./static/cross.png" alt="cross" />
+      </div>
+
+      <div class="mobilemenu__content">
+        <ul>
+          <a href="./Aboutus.html"><li>About us</li></a>
+          <a href="./membership.html"><li>Services</li></a>
+          <li>Learn</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <header id="fixednav" class="fixednavbar">
         <div class="fixednavbar__row row">
-          <img
-            class="fixednavbar__logo col-lg-2 col-md-2"
-            src="./static/TheCoffeeCommune-LogoSeries-RGB-1-2logo-e1600866870209.png"
-            alt="logo"
-          />
+          <a href="./index.html"
+            ><img
+              class="fixednavbar__logo col-lg-2 col-md-2 col-xs-2"
+              src="./static/TheCoffeeCommune-LogoSeries-RGB-1-2logo-e1600866870209.png"
+              alt="logo"
+          /></a>
           <nav
             class="fixednavbar__list col-lg-10 col-md-10 hidden-xs hidden-sm"
           >
             <ul>
-              <li>About us</li>
-              <li>Services</li>
+              <a href="./Aboutus.html"><li>About us</li></a>
+              <a href="./membership.html"><li>Services</li></a>
               <li>Learn</li>
               <li>Get in touch</li>
             </ul>
           </nav>
+          <div id="burgerbtn" class="burgerbtn col-xs-10 visible-xs">
+            <img width="30px" src="./static/burger.png" alt="burger" />
+          </div>
         </div>
       </header>
       <div id="content" class="content">
@@ -656,4 +674,5 @@
     </main>
   </body>
   <script type="text/javascript" src="script/membership.js"></script>
+  <script type="text/javascript" src="script/burgermenu.js"></script>
 </html>

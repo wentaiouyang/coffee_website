@@ -1,43 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
-$maxwidth: 1200px;
-$gradient_color: linear-gradient(
-    133deg,
-    #e0f391,
-    rgba(225, 252, 116, 0) 58%,
-    #e0f391 66%
-  ),
-  linear-gradient(355deg, #bdfff9, #e0f391 73%);
-
-@mixin buttonstyle {
-  padding: 15px 30px;
-  width: 200px;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-@mixin contentstyle {
-  max-width: $maxwidth;
-  margin: auto;
-}
-
-@mixin titlestyle {
-  font-size: 36px;
-  line-height: 50px;
-  font-family: "Rubik", sans-serif;
-  span {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-weight: 400;
-  }
-}
-
-@mixin textstyle {
-  font: optional;
-  line-height: 26px;
-  font-size: 16px;
-}
+@import "./template.scss";
 
 body {
   margin: 0;

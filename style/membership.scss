@@ -1,43 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
-$maxwidth: 1200px;
-$gradient_color: linear-gradient(
-    133deg,
-    #e0f391,
-    rgba(225, 252, 116, 0) 58%,
-    #e0f391 66%
-  ),
-  linear-gradient(355deg, #bdfff9, #e0f391 73%);
-
-@mixin buttonstyle {
-  padding: 15px 30px;
-  width: 200px;
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-@mixin contentstyle {
-  max-width: $maxwidth;
-  margin: auto;
-}
-
-@mixin titlestyle {
-  font-size: 36px;
-  line-height: 50px;
-  font-family: "Rubik", sans-serif;
-  span {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-weight: 400;
-  }
-}
-
-@mixin textstyle {
-  font: optional;
-  line-height: 26px;
-  font-size: 16px;
-}
+@import "./template.scss";
 
 body {
   margin: 0;
@@ -153,43 +114,6 @@ body {
             margin-top: 20px;
             width: 100%;
             padding: 20px;
-          }
-        }
-      }
-    }
-
-    .footer {
-      background-color: #1f1f1f;
-      color: white;
-
-      padding: 40px 0;
-      .footer__row {
-        @include contentstyle();
-        .footer__row-copyright {
-          margin-top: 20px;
-          padding-top: 20px;
-          border-top: 1px solid white;
-          text-align: center;
-        }
-        .footer__col {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          .footer__col-logo {
-            filter: invert(100%);
-            padding-right: 20px;
-            border-right: solid black 1px;
-          }
-
-          .footer__col-list {
-            list-style: none;
-            li {
-              margin: 10px 0;
-            }
-            .footer__col-list-icon {
-              cursor: pointer;
-              margin: 5px 0;
-            }
           }
         }
       }
