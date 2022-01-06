@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+.fixednavbar__list ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__list ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 40px 0;
+}
+.footer .footer__row {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer .footer__row .footer__row-copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid white;
+  text-align: center;
+}
+.footer .footer__row .footer__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer__row .footer__col .footer__col-logo {
+  filter: invert(100%);
+  padding-right: 20px;
+  border-right: solid black 1px;
+}
+.footer .footer__row .footer__col .footer__col-list {
+  list-style: none;
+}
+.footer .footer__row .footer__col .footer__col-list li {
+  margin: 10px 0;
+}
+.footer .footer__row .footer__col .footer__col-list .footer__col-list-icon {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.mobilemenu {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #e0f391;
+  width: 100%;
+  transition: 400ms all ease-in-out;
+  padding-top: 30px;
+  flex-direction: column;
+}
+.mobilemenu .mobilemenu__content {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobilemenu .mobilemenu__content ul {
+  padding: 0;
+  margin: 0;
+}
+.mobilemenu .mobilemenu__content ul a {
+  text-decoration: none;
+  color: black;
+}
+.mobilemenu .mobilemenu__content ul li {
+  list-style: none;
+  margin: 20px;
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+.mobilemenu .mobilemenu__content ul li span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.mobilemenu .mobilemenu__closebtn {
+  width: 100%;
+  text-align: right;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.burgerbtn img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burgerbtn {
+  text-align: right;
+  cursor: pointer;
+}
+
+.mobilemenu__show {
+  opacity: 1 !important;
+  height: 100vh !important;
+}
+
+body {
+  margin: 0;
+}
+body main .fixednavbar {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 200ms;
+  width: 100%;
+}
+body main .fixednavbar .fixednavbar__row {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  border-bottom: 1px black solid;
+}
+body main .fixednavbar .fixednavbar__logo {
+  width: 140px;
+}
+body main .fixednavbar .fixednavbar__list {
+  line-height: 90px;
+}
+body main .fixednavbar .fixednavbar__list ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+}
+body main .fixednavbar .fixednavbar__list ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+body main .fixednavbar .fixednavbar__list ul li:hover {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+body main .learning {
+  background-color: #e0f391;
+}
+body main .learning .learning__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  margin-top: 90px;
+}
+body main .learning .learning__content .learning__title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+body main .learning .learning__content .learning__title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+body main .learning .learning__content .learning__text {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+body main .learning .learning__content .learning__video {
+  height: 300px;
+  margin-bottom: 20px;
+}
+body main .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+body main .content .content__title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+}
+body main .content .content__title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+body main .content .content__text {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+body main .content .content__video {
+  height: 300px;
+  margin-bottom: 20px;
+}
+body main .content .content__cards {
+  margin-top: 40px;
+}
+body main .content .content__cards .content__card .content__card-firstbackground {
+  background-image: url(../static/sabin-popa-WqCkUU30Gvk-unsplash-1365x2048-op.jpg);
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+body main .content .content__cards .content__card .content__card-secondbackground {
+  background-image: url(../static/Coffee-Com.png);
+  background-position: center center;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+body main .content .content__cards .content__card-text {
+  background-color: #e0f391;
+  padding: 40px;
+  text-align: center;
+}
+body main .content .content__cards .content__card-text .content__card-title {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+}
+body main .content .content__cards .content__card-text .content__card-title span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+body main .content .content__cards .content__card-text .content__card-des {
+  font: optional;
+  line-height: 26px;
+  font-size: 16px;
+}
+body main .content .content__cards .content__card-text .content__card-button {
+  margin-top: 40px;
+  padding: 15px 30px;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/*# sourceMappingURL=learn.css.map */
