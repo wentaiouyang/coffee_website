@@ -1,0 +1,98 @@
+@import "./template.scss";
+@mixin inputStyle {
+  height: 40px;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+body {
+  margin: 0;
+  main {
+    .fixednavbar {
+      position: fixed;
+      background-color: white;
+      top: 0;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity 200ms;
+      width: 100%;
+      .fixednavbar__row {
+        @include contentstyle();
+        display: flex;
+        border-bottom: 1px black solid;
+      }
+      .fixednavbar__logo {
+        width: 140px;
+      }
+
+      .fixednavbar__list {
+        line-height: 90px;
+        ul {
+          display: flex;
+          list-style: none;
+          justify-content: flex-end;
+          margin: 0;
+        }
+        ul li {
+          margin: 0 10px;
+          cursor: pointer;
+          transition: all 200ms ease-in-out;
+          &:hover {
+            -webkit-filter: blur(1px);
+            filter: blur(1px);
+          }
+        }
+      }
+    }
+
+    .content {
+      @include contentstyle();
+      padding: 40px 20px;
+      margin-top: 50px;
+
+      .content__title {
+        @include titlestyle();
+        text-align: center;
+      }
+      .content__text {
+        @include textstyle();
+        text-align: center;
+      }
+      .content__video {
+        height: 600px;
+        margin-bottom: 20px;
+      }
+
+      .content_button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+        .content__button {
+          @include buttonstyle();
+          border: none;
+        }
+      }
+
+      .content__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 30px;
+
+        .content__form-row {
+          display: flex;
+          justify-content: space-between;
+          .content__form-row-input {
+            width: 49%;
+            @include inputStyle();
+          }
+        }
+        .content__form-input {
+          @include inputStyle();
+        }
+      }
+    }
+  }
+}
